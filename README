@@ -1,0 +1,16 @@
+Setup: Download Java 8 and set it up including JAVA_HOME
+
+To start server: ./sbt run (Missing dependencies are downloaded here the first time, will take a while )
+
+To run tests: ./sbt test
+
+Verify Behavior:
+
+Post base case:  curl -v -X POST http://localhost:9000
+
+Post with headers: curl -v -X POST -H "Accept: application/json" http://localhost:9000
+
+Simple Get: curl -v http://localhost:9000
+
+Get with Accept Headers: curl -v -H "Accept: application/json" http://localhost:9000
+
